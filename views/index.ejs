@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include common/head %>
+  </head>
+
+  <body>
+    <div id="channelsContainer" class="left-panel" style="width:100%">
+      <div id="clientHeader" class="hide pull-right">
+        <div class="pull-left current-client offline">Somebody</div>
+        <div class="pull-left exitBtn">&times;</div>
+      </div>
+      <div id="mainContainer" class='container'>
+        <div class='starter-template'>
+          <div class='page-header'>
+            <h1><%= title %></h1>
+          </div>
+          <div id="contentPane">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="OLPeopleContainer" class="hide right-panel" style="width:20%; height:100%;">
+      <div class="header">ONLINE</div>
+      <div class="list"></div>
+    </div>
+
+    <% include common/footer %>
+
+    <% include common/javascripts %>
+  </body>
+</html>

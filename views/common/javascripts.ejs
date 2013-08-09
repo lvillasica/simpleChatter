@@ -1,0 +1,33 @@
+<script src='/javascripts/jquery-2.0.3.min.js'></script>
+<script src='/javascripts/bootstrap.min.js'></script>
+<script src='/javascripts/respond.min.js'></script>
+<script src='/javascripts/underscore-min.js'></script>
+<script src='/javascripts/backbone-min.js'></script>
+<script src='/javascripts/utils.js'></script>
+<script src='/javascripts/main.js'></script>
+<script src='/javascripts/models/person.js'></script>
+<script src='/javascripts/collections/people.js'></script>
+<script src='/javascripts/views/messages/messages_index.js'></script>
+<script src='/javascripts/views/messages/chat_room.js'></script>
+<script src='/javascripts/views/messages/channel.js'></script>
+<script src='/javascripts/views/messages/chat_message.js'></script>
+<script src='/javascripts/views/messages/private_messaging_box.js'></script>
+<script src='/javascripts/views/people/people_index.js'></script>
+<script src='/javascripts/views/people/online_person.js'></script>
+<script src='/javascripts/routers/messages_router.js'></script>
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript">
+	var views = [
+		'MessagesIndex',
+		'ChatRoom',
+		'Channel',
+		'ChatMessage',
+		'PeopleIndex',
+		'OnlinePerson',
+		'PrivateMessagingBox'
+	];
+	utils.loadTemplates(views, window.Main.Views, function() {
+	  app = new Main.Routers.Messages();
+	  Backbone.history.start();
+	});
+</script>

@@ -1,0 +1,26 @@
+
+<div class="header">
+	<span class="channel-name">
+		<%= this.channel %>
+	</span>
+	<% if(this.channel != 'public') { %>
+	<span class="detach pull-right">&times;</span>
+	<% } %>
+</div>
+
+<div id="<%= this.channel %>Channel" class="chats">
+	<div class="nomsg">
+		No chat messages yet.
+	</div>
+	<!-- <div class="chat-msg">
+		<div class="msg">Message Sent</div>
+		<div style="text-align:right;">
+			<span class="from">Somebody</span>
+			<span class="time">11:45pm</span>
+		</div>
+	</div> -->
+</div>
+
+<div class="msg-input">
+  <input type="text" class="msg-input form-control" placeholder="Enter your message here..." />
+</div>

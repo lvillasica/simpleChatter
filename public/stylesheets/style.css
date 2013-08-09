@@ -1,0 +1,180 @@
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: whitesmoke;
+}
+
+#mainContainer {
+	padding: 60px 20px;
+}
+
+.left-panel {
+	position: relative;
+	left: 0;
+	bottom: 0;
+}
+
+.right-panel {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
+
+a {
+  color: #00B7FF;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+#clientHeader {
+	margin-right: 25px;
+}
+
+#clientHeader .current-client {
+	font-size: 15pt;
+	padding: 10px 10px;
+	text-align: center;
+	background-color: #E3E3E3;
+	font-weight: bold;
+	color: #808080;
+	margin-right: 5px;
+}
+
+.current-client.offline {
+	border-left: 10px solid #909090;
+}
+
+.current-client.online {
+	border-left: 10px solid #1E8622;
+}
+
+#clientHeader .exitBtn {
+	font-size: 15pt;
+	font-weight: bold;
+	padding: 10px 10px;
+	text-align: center;
+	background-color: #272222;
+	color: oldlace;
+	cursor: pointer;
+}
+
+.chat-box {
+	height: 400px;
+	width: 350px;
+	display: inline-block;
+	float: left;
+	margin-top: 10px;
+	margin-right: 15px;
+	border: 1px solid #272222;
+	/*background-color: #DCDCDC;*/
+	background-color: #E3E3E3;
+	overflow: hidden;
+}
+
+.chat-box .header {
+	padding: 10px;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: #272222;
+	color: whitesmoke;
+}
+
+.chat-box .header .detach {
+	font-size: 12pt;
+	cursor: pointer;
+}
+
+.chat-box .chats {
+	height: 80%;
+	overflow-y: scroll;
+	margin: 2px 5px 0 5px;
+}
+
+.chats .chat-msg {
+	font-size: 8pt;
+	padding: 5px;
+	border-bottom: 1px solid #A9A9A9;
+	/*background-color: #E6E6E6;*/
+}
+
+.chats .chat-msg .time {
+	font-style: italic;
+}
+
+.chats .chat-msg .from {
+	font-weight: bold;
+}
+
+.chats .chat-msg .msg {
+	font-size: 10pt;
+	padding: 4px 0;
+	width: 100%;
+	word-wrap: break-word;
+}
+
+.chat-box .msg-input {
+	padding: 5px;
+}
+
+.chats .nomsg {
+	font-size: 15pt;
+	height: 100%;
+	background-color: #E6E6E6;
+}
+
+.add-chat-box {
+	height: 400px;
+	width: 350px;
+	display: inline-block;
+	float: left;
+	margin-top: 10px;
+	margin-right: 15px;
+	border: 4px dashed #929292;
+	background-color: #DCDCDC;
+	font-size: 50pt;
+	color: #929292;
+	text-align: center;
+	line-height: 400px;
+	cursor: pointer;
+}
+
+#OLPeopleContainer {
+	border-left: 1px solid #E3E3E3;
+	background-color: white;
+}
+
+#OLPeopleContainer .header {
+	font-size: 15pt;
+	padding: 10px 10px;
+	text-align: center;
+	background-color: #E3E3E3;
+	font-weight: bold;
+	color: #808080;
+}
+
+#olPeople {
+	overflow-y: auto;
+}
+
+#olPeople .ol-person {
+	padding: 5px 10px;
+	font-size: 20pt;
+	border-top: 1px solid #B5B5B5;
+	border-bottom: 1px solid #EDEDED;
+	background-color: #B5B5B5;
+	color: white;
+	word-wrap: break-word;
+	cursor: pointer;
+}
+
+.ol-person.online {
+	background-color: #61A275 !important;
+	color: oldlace !important;
+}
+
+.ol-person.has-pm {
+	background-color: #F67D7D !important;
+}
